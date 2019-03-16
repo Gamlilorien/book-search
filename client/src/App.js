@@ -1,7 +1,6 @@
 //import React, { Component } from "react";
 import React from "react";
 import BookLibraryContainer from "./components/BookLibraryContainer";
-import logo from "./logo.svg";
 import "./App.css";
 
 // class App extends Component {

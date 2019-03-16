@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavTabs from "./NavTabs";
+import Navbar from "./Navbar";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 
@@ -23,7 +23,7 @@ class BookLibraryContainer extends Component {
   render() {
     return (
       <div>
-        <NavTabs
+        <Navbar
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}
         />
