@@ -7,3 +7,15 @@ body {
 p.navbar-brand {
   margin-top: 1rem;
 }
+
+banner-title {
+  font-size: 3rem;
+}
+
+p.lead-quote {
+  margin-bottom: 0;
+}
+
+div.mTop {
+  margin-top: 1rem;
+}

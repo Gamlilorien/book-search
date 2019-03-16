@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
+import Banner from "./Banner";
+import SearchForm from "./SearchForm";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 
@@ -20,6 +22,14 @@ class BookLibraryContainer extends Component {
     } 
   }
 
+   renderSearchForm = () => {
+    if (this.state.currentPage === "Search") {
+      return <SearchForm />;
+    } else {
+      // nothing
+      }
+   }
+
   render() {
     return (
       <div>
@@ -27,7 +37,15 @@ class BookLibraryContainer extends Component {
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}
         />
-        {this.renderPage()}
+        
+        <div className="container-fluid mTop"><Banner /></div>
+
+        <div className="container">{this.renderSearchForm()}</div>
+        <br />
+        <div className="container">
+            {this.renderPage()}
+        </div>
+        
       </div>
     );
   }
