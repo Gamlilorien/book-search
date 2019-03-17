@@ -2,15 +2,16 @@ import React from "react";
 
 function SearchForm(props) {
   return (
+    
     <form>
       <h3>Book Search</h3>
     <div className="form-group">
       <label htmlFor="search">Book</label>
-      <div class="form-row">
-        <div class="col">
+      <div className="form-row">
+        <div className="col">
           <input
           onChange={props.handleInputChange}
-          value={props.value}
+          value={props.search}
           name="search"
           type="text"
           className="form-control"
@@ -18,7 +19,7 @@ function SearchForm(props) {
           id="search"
         />
         </div>
-        <div class="col">
+        <div className="col">
           <button onClick={props.handleFormSubmit} className="btn btn-primary">
           Search
           </button>
